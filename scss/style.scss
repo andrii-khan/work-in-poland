@@ -398,11 +398,10 @@ textarea {
 	.ba-about__desc {
 		max-width: 250px;
 	}
-	.ba-medium-6 +.ba-medium-6 {
-		margin: 20px 0;
-	}
+	
 	.ba-medium-6 {
 		width: 50%;
+		margin: 30px 0;
 	}
 	.ba-medium-12 {
 		width: 100%;
@@ -443,6 +442,15 @@ textarea {
 
 }
 @media screen and (max-width: 505px){
+	.ba-works-section {
+		background-position: 49%;
+		.ba-button {
+			background-color: #fff;
+			&:hover {
+				background-color: $primary-color;
+			}
+		}
+	}
 	.ba-small {
 		width: 100%;
 	}

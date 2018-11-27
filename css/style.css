@@ -1004,11 +1004,9 @@ select {
   .ba-about__desc {
     max-width: 250px;
   }
-  .ba-medium-6 + .ba-medium-6 {
-    margin: 20px 0;
-  }
   .ba-medium-6 {
     width: 50%;
+    margin: 30px 0;
   }
   .ba-medium-12 {
     width: 100%;
@@ -1056,6 +1054,15 @@ select {
 }
 
 @media screen and (max-width: 505px) {
+  .ba-works-section {
+    background-position: 49%;
+  }
+  .ba-works-section .ba-button {
+    background-color: #fff;
+  }
+  .ba-works-section .ba-button:hover {
+    background-color: #FACC02;
+  }
   .ba-small {
     width: 100%;
   }
