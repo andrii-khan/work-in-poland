@@ -101,7 +101,7 @@ textarea {
 .ba-menu {
 	display: flex;
 	&__list + .ba-menu__list{
-		margin-left: 41px;
+		margin-left: 31px;
 	}
 	& a:hover {
 		color: $primary-color;
@@ -209,6 +209,9 @@ textarea {
 		}
 	}
 }
+.ba-tel:hover {
+	color: $primary-color;
+}
 .ba-footer {
 	margin-top: 95px;
 	background: url('../img/Rectangle.png') no-repeat 50%;
@@ -222,7 +225,7 @@ textarea {
 
 		&__block {
 			margin-left: 50px;
-			margin-bottom: 80px;
+			margin-bottom: 78px;
 		}
 	}
 	.ba-tel a{
@@ -237,19 +240,23 @@ textarea {
 	color: #fff;
 }
 .ba-nav--footer{
-	color: #777A89;
-	a {
-		color: #777A89;	
+	.ba-copy, .ba-logo__text, .ba-tel {
+		color: #777A89;
+	}
+	.ba-menu a, .ba-back-top a{
+		color: #777A89;
 		&:hover {
 			color: #fff;
 		}
 	}
-}
-.ba-tel {
-	&:hover {
-		color: $primary-color;
+	.ba-tel:hover{
+		color: #fff;
+	}
+	.ba-tel {
+		margin-right: 15px;
 	}
 }
+
 .ba-current {
 	color: $primary-color;
 }
@@ -496,7 +503,8 @@ textarea {
 	}
 	
 	.ba-about-section {
-		background-position: 25% 0%;
+		background: url(../img/mobile-bg-1.png) no-repeat 50%;
+		background-size: cover;
 		.ba-button {
 			background-color: #FAF7F8;
 			&:hover {

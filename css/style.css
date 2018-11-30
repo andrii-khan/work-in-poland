@@ -655,7 +655,7 @@ select {
 }
 
 .ba-menu__list + .ba-menu__list {
-  margin-left: 41px;
+  margin-left: 31px;
 }
 
 .ba-menu a:hover {
@@ -782,6 +782,10 @@ select {
   top: -15px;
 }
 
+.ba-tel:hover {
+  color: #FACC02;
+}
+
 .ba-footer {
   margin-top: 95px;
   background: url("../img/Rectangle.png") no-repeat 50%;
@@ -804,7 +808,7 @@ select {
 
 .ba-footer .ba-partners__block {
   margin-left: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .ba-footer .ba-tel a {
@@ -819,20 +823,24 @@ select {
   color: #fff;
 }
 
-.ba-nav--footer {
+.ba-nav--footer .ba-copy, .ba-nav--footer .ba-logo__text, .ba-nav--footer .ba-tel {
   color: #777A89;
 }
 
-.ba-nav--footer a {
+.ba-nav--footer .ba-menu a, .ba-nav--footer .ba-back-top a {
   color: #777A89;
 }
 
-.ba-nav--footer a:hover {
+.ba-nav--footer .ba-menu a:hover, .ba-nav--footer .ba-back-top a:hover {
   color: #fff;
 }
 
-.ba-tel:hover {
-  color: #FACC02;
+.ba-nav--footer .ba-tel:hover {
+  color: #fff;
+}
+
+.ba-nav--footer .ba-tel {
+  margin-right: 15px;
 }
 
 .ba-current {
@@ -1105,7 +1113,8 @@ select {
     display: none;
   }
   .ba-about-section {
-    background-position: 25% 0%;
+    background: url(../img/mobile-bg-1.png) no-repeat 50%;
+    background-size: cover;
   }
   .ba-about-section .ba-button {
     background-color: #FAF7F8;
