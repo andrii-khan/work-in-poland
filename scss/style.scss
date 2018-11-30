@@ -95,12 +95,7 @@ textarea {
 		a + a {
 			margin-left: 5px;
 		}
-		.ba-tel {
-			color: $primary-color;
-		&:hover {
-			text-decoration: underline;	
-		}
-		}
+		
 	}
 }
 .ba-menu {
@@ -156,7 +151,7 @@ textarea {
 		text-align: center;
 	}
 }
-.ba-documents {
+.ba-document {
 	&__title {
 		font-size: 24px;
 		margin-bottom: 0;
@@ -165,7 +160,7 @@ textarea {
 		margin-bottom: 74px;
 		display: block;
 	}
-	padding: 74px 0 95px;
+	padding: 74px 0;
 	.ba-row {
 		padding-left: 30px;
 		margin-bottom: 76px;
@@ -216,7 +211,7 @@ textarea {
 }
 .ba-footer {
 	margin-top: 95px;
-	background: url('../img/Rectangle.png') no-repeat; 
+	background: url('../img/Rectangle.png') no-repeat 50%;
 	background-color: #FAF7F8;
 	background-size: cover;
 	padding: 90px 0 30px;
@@ -230,32 +225,36 @@ textarea {
 			margin-bottom: 80px;
 		}
 	}
-	.fa-phone {
-		margin-right: 8px;
+	.ba-tel a{
+		color: #777A89;
 	}
+	
 }
 .ba-copy__info {
 		padding-left: 20px;
 }
 .ba-back-top :hover {
-	color: $primary-color;
+	color: #fff;
 }
 .ba-nav--footer{
 	color: #777A89;
 	a {
 		color: #777A89;	
-	}
-	.ba-tel {
 		&:hover {
-			color: #777A89;
+			color: #fff;
 		}
+	}
+}
+.ba-tel {
+	&:hover {
+		color: $primary-color;
 	}
 }
 .ba-current {
 	color: $primary-color;
 }
 .ba-works-section {
-	background: url(../img/bg-2.png) no-repeat 100%;
+	background: url(../img/bg-2.png) no-repeat 50%;
 	background-color: #FAF7F8;
 	background-size: cover;
 	margin-bottom: 140px;
@@ -276,18 +275,19 @@ textarea {
 	
 }
 .ba-documents-section {
-	background: url(../img/bg-3.png) no-repeat 100% 0%;
+	background: url(../img/bg-3.png) no-repeat 50%;
 	background-color: #FAF7F8;
-	background-size: contain;
-	
+	background-size: cover;
+	margin-bottom: 74px;
 }
 .ba-documents {
 	padding-top: 200px;
 	&__title {
 		font-size: 24px;
+
 	}
 	&__desc {
-		max-width: 450px;
+		max-width: 318px;
 		word-spacing: 1.6px;
 		margin-bottom: 70px;
 	}
@@ -423,21 +423,20 @@ textarea {
 	.ba-medium-12 {
 		width: 100%;
 	}
-	.ba-footer .ba-partners {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		width: 100%;
-		&__block {
-			width: 30%;
-			margin: 20px;
-			
-		}
-	}
+	
 	.ba-footer .ba-tel {
 		display: none;
+	}
+	.ba-footer {
+		&-menu {
+			display: none;
+		}
+	}
+	.ba-socials {
+		display: none;
+		.ba-tel, .ba-vk, .ba-skype {
+			display: none;
+		}
 	}
 
 }
@@ -465,19 +464,37 @@ textarea {
 		width: 100%;
 	}
 	.ba-footer{
+		padding: 10px 0 15px;
+		.ba-partners {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			&__block + .ba-partners__block {
+				margin-left: 10px;
+			}
+			&__block {
+				width: 30%;
+				margin: 0 0 20px;
+				
+				svg {
+					width: 80px;
+				}			
+			}
+		}
 		&-menu {
 			display: none;
 		}
 		.ba-socials {
 			display: none;
+			.ba-tel, .ba-vk, .ba-skype {
+				display: none;
+			}
 		}
 	}
-	.ba-socials {
-		display: none;
-		.ba-tel, .ba-vk, .ba-skype {
-			display: none;
-		}
-	}
+	
 	.ba-about-section {
 		background-position: 25% 0%;
 		.ba-button {
