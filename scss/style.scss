@@ -149,6 +149,9 @@ textarea {
 	}
 	.ba-centre {
 		text-align: center;
+		a {
+			background: #fff;
+		}
 	}
 }
 .ba-document {
@@ -432,6 +435,19 @@ textarea {
 	}
 }
 @media screen and (max-width: 692px){
+	.ba-document {
+		padding-top: 12px;
+		padding-bottom: 30px;
+		&__desc {
+			margin-bottom: 10px;
+		}
+		.ba-row {
+			margin-bottom: 0px;
+		}
+	}
+	.ba-services-section {
+		padding: 35px 0;
+	}
 	.ba-about-section {
 		background-position: -25% 0%;
 	}
@@ -443,6 +459,7 @@ textarea {
 		display: none;
 	}
 	.ba-footer {
+		margin-top: 40px;
 		&-menu {
 			display: none;
 		}
@@ -453,14 +470,22 @@ textarea {
 			display: none;
 		}
 	}
+	.ba-services p {
+		margin-bottom: 67px;
+	}
 
 }
 @media screen and (max-width: 505px){
+	.ba-result-section {
+		padding: 30px 0;
+	}
 	.ba-container {
 		padding: 0 15px;
 	}
 	.ba-services p {
 		margin-bottom: 0;
+		max-width: 240px;
+		margin: 0 auto;
 	}
 	.ba-about-section {
 		background-position: -10%;

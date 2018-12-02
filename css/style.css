@@ -710,6 +710,10 @@ select {
   text-align: center;
 }
 
+.ba-services .ba-centre a {
+  background: #fff;
+}
+
 .ba-document {
   padding: 74px 0;
 }
@@ -1034,6 +1038,19 @@ select {
 }
 
 @media screen and (max-width: 692px) {
+  .ba-document {
+    padding-top: 12px;
+    padding-bottom: 30px;
+  }
+  .ba-document__desc {
+    margin-bottom: 10px;
+  }
+  .ba-document .ba-row {
+    margin-bottom: 0px;
+  }
+  .ba-services-section {
+    padding: 35px 0;
+  }
   .ba-about-section {
     background-position: -25% 0%;
   }
@@ -1042,6 +1059,9 @@ select {
   }
   .ba-footer .ba-tel {
     display: none;
+  }
+  .ba-footer {
+    margin-top: 40px;
   }
   .ba-footer-menu {
     display: none;
@@ -1052,14 +1072,22 @@ select {
   .ba-socials .ba-tel, .ba-socials .ba-vk, .ba-socials .ba-skype {
     display: none;
   }
+  .ba-services p {
+    margin-bottom: 67px;
+  }
 }
 
 @media screen and (max-width: 505px) {
+  .ba-result-section {
+    padding: 30px 0;
+  }
   .ba-container {
     padding: 0 15px;
   }
   .ba-services p {
     margin-bottom: 0;
+    max-width: 240px;
+    margin: 0 auto;
   }
   .ba-about-section {
     background-position: -10%;
