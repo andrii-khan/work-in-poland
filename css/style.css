@@ -851,7 +851,7 @@ select {
   background: url(../img/bg-2.png) no-repeat 50%;
   background-color: #FAF7F8;
   background-size: cover;
-  margin-bottom: 140px;
+  padding-bottom: 20px;
 }
 
 .ba-works {
@@ -876,7 +876,7 @@ select {
   background: url(../img/bg-3.png) no-repeat 50%;
   background-color: #FAF7F8;
   background-size: cover;
-  margin-bottom: 74px;
+  padding-bottom: 25px;
 }
 
 .ba-documents {
@@ -904,6 +904,8 @@ select {
 
 .ba-scroll {
   text-align: center;
+  margin-top: -25px;
+  margin-bottom: 74px;
 }
 
 .ba-scroll a:hover svg path {
@@ -1049,6 +1051,20 @@ select {
 }
 
 @media screen and (max-width: 505px) {
+  .ba-container {
+    padding: 0 15px;
+  }
+  .ba-about-section .ba-about {
+    margin-bottom: 40px;
+  }
+  .ba-about__desc {
+    display: none;
+  }
+  .ba-about__mobile {
+    display: block;
+    max-width: 170px;
+    margin-bottom: 90px;
+  }
   .ba-works-section {
     background-position: 49%;
   }

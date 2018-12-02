@@ -264,7 +264,8 @@ textarea {
 	background: url(../img/bg-2.png) no-repeat 50%;
 	background-color: #FAF7F8;
 	background-size: cover;
-	margin-bottom: 140px;
+	padding-bottom: 20px;
+	// margin-bottom: 140px;
 }
 .ba-works {
 	padding-top: 200px;
@@ -285,7 +286,8 @@ textarea {
 	background: url(../img/bg-3.png) no-repeat 50%;
 	background-color: #FAF7F8;
 	background-size: cover;
-	margin-bottom: 74px;
+	// margin-bottom: 74px;
+	padding-bottom: 25px;
 }
 .ba-documents {
 	padding-top: 200px;
@@ -309,6 +311,8 @@ textarea {
 }
 .ba-scroll {
 	text-align: center;
+	margin-top: -25px;
+	margin-bottom: 74px;
 	& a {
 		&:hover svg path {
 			fill: #000;
@@ -448,6 +452,22 @@ textarea {
 
 }
 @media screen and (max-width: 505px){
+	.ba-container {
+		padding: 0 15px;
+	}
+	.ba-about-section {
+		.ba-about {
+		margin-bottom: 40px;
+		}
+	}
+	.ba-about__desc {
+		display: none;
+	}
+	.ba-about__mobile {
+		display: block;
+		max-width: 170px;
+		margin-bottom: 90px;
+	}
 	.ba-works-section {
 		background-position: 49%;
 		.ba-button {
