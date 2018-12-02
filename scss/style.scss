@@ -378,6 +378,10 @@ textarea {
 .ba-burger {
 	display: none;
 }
+.ba-about__mobile {
+	display: none;
+}
+
 @media screen and (max-width: 1100px) {
 	.ba-footer .ba-menu {
 		display: none;
@@ -532,4 +536,7 @@ textarea {
 			}
 		}
 	}
+}
+.ba-skype:hover svg path{
+	fill: $primary-color;
 }

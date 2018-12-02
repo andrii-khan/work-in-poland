@@ -982,6 +982,10 @@ select {
   display: none;
 }
 
+.ba-about__mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   .ba-footer .ba-menu {
     display: none;
@@ -1138,6 +1142,10 @@ select {
   .ba-about-section .ba-button:hover {
     background-color: #FACC02;
   }
+}
+
+.ba-skype:hover svg path {
+  fill: #FACC02;
 }
 
 /*# sourceMappingURL=style.css.map */
