@@ -15,6 +15,7 @@ ul {
 }
 a {
 	text-decoration: none;
+	position: relative;
 }
 // a:hover, a:active {
 // 	color: $primary-color;
@@ -31,7 +32,7 @@ a,
 input[type="submit"],
 input[type="button"],
 button{
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in, fill .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in, fill .3s ease-in, opacity .3s ease-in;
 	color: $text-color;
 }
 input[type="submit"],
@@ -151,6 +152,9 @@ textarea {
 		text-align: center;
 		a {
 			background: #fff;
+			&:hover {
+				background: $primary-color;
+			}
 		}
 	}
 }
@@ -216,7 +220,6 @@ textarea {
 	color: $primary-color;
 }
 .ba-footer {
-	margin-top: 95px;
 	background: url('../img/Rectangle.png') no-repeat 50%;
 	background-color: #FAF7F8;
 	background-size: cover;
@@ -384,7 +387,39 @@ textarea {
 .ba-about__mobile {
 	display: none;
 }
-
+.ba-map {
+	background-color: #fff;
+	margin: 74px 0;
+}
+.ba-form{
+	&__title {
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+	&__desc {
+		margin-top: 0;
+		font-weight: bold;
+	}
+	padding: 33px 77px 50px 81px;
+	text-align: center;
+	input, textarea {
+		width: 100%;
+		background: #FAF7F8;
+		border: none;
+		margin-bottom: 28px;
+		border-radius: 50px;
+		padding: 15px 0 15px 10px;
+	}
+	textarea {
+		min-height: 90px;
+		resize: none;
+		margin-bottom: 40px;
+		padding: 20px;
+	}
+	.ba-button {
+		min-width: 100%;
+	}
+}
 @media screen and (max-width: 1100px) {
 	.ba-footer .ba-menu {
 		display: none;
@@ -476,6 +511,15 @@ textarea {
 
 }
 @media screen and (max-width: 505px){
+	.ba-form {
+		padding: 15px;
+		.ba-button {
+			background: #fff;
+			&:hover {
+				background: $primary-color;
+			}
+		}
+	}
 	.ba-result-section {
 		padding: 30px 0;
 	}
@@ -566,6 +610,6 @@ textarea {
 		}
 	}
 }
-.ba-skype:hover svg path{
-	fill: $primary-color;
+.ba-icon-hover {
+	opacity: 0;
 }
