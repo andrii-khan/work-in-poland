@@ -791,8 +791,12 @@ select {
   top: -15px;
 }
 
-.ba-tel:hover {
+.ba-tel {
   color: #FACC02;
+}
+
+.ba-tel:hover {
+  color: #282A33;
 }
 
 .ba-footer {
@@ -984,6 +988,7 @@ select {
 
 .ba-how-btn {
   text-align: center;
+  margin-bottom: 74px;
 }
 
 .ba-burger {
@@ -1021,6 +1026,7 @@ select {
   margin-bottom: 28px;
   border-radius: 50px;
   padding: 15px 0 15px 10px;
+  outline-color: #FACC02;
 }
 
 .ba-form textarea {
@@ -1233,6 +1239,16 @@ select {
 
 .ba-icon-hover {
   opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ba-icon-hover:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

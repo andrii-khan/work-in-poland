@@ -81,7 +81,7 @@
                     <h1 class="ba-works__title">Для сотрудничества с клиентами</h1>
                     <p class="ba-works__desc">Мы используем профессиональный аккаунт Вконтакте для публикации
                         актуальных вакансий и другой полезной информации</p>
-                    <a class="ba-button" href="#">Посетить страницу</a>
+                    <a class="ba-button" href="https://vk.com/id353152479" target="_blank">Посетить страницу</a>
                 </div>
             </div>
         </section>
@@ -114,7 +114,7 @@
                                     касательно вопросов по вакансиям,
                                     проживании и оплате труда
                                 </p>
-                                <a class="ba-button" href="#">Контакты</a>
+                                <a class="ba-button" href="index.html#map">Контакты</a>
                             </div>
                         </div>
                         <div class="ba-col-4 ba-medium-12">
@@ -156,7 +156,7 @@
                                 <h3 class="ba-how-block__title">Подбор места работы</h3>
                                 <p>Согласовываем актуальные предложения на дату отправки и Ваши предпочтения
                                 </p>
-                                <a class="ba-button" href="#">Вакансии</a>
+                                <a class="ba-button" href="https://vk.com/id353152479" target="_blank">Вакансии</a>
                             </div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@
             // Do something else, like open/close menu
         });
         $(document).ready(function () {
-            $("a[href*='#']:not([href='#'])").on("click", function (event) {
+            $("a[href^='#']:not([href='#'])").on("click", function (event) {
                 event.preventDefault();
                 var id = $(this).attr('href'),
                     top = $(id).offset().top;
